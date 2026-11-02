@@ -17,7 +17,7 @@ import torch.nn as nn
 
 # ---------------------------------------------------------------- 默认配置
 
-DEFAULT_DATA_DIR = "D:/image/process_1024"
+DEFAULT_DATA_DIR = "data/process"
 DEFAULT_MEAN = [0.5, 0.5, 0.5]
 DEFAULT_STD = [0.5, 0.5, 0.5]
 IMAGE_SIZE = 224

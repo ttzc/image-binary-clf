@@ -12,3 +12,7 @@ wheels/
 # 训练产物（每次跑都会变，不进版本库）
 runs/
 *.pt
+
+# 数据目录（图片不入库）
+# 注意：必须写 /data/ 而不是 data/，否则 scripts/data/ 也会被一起忽略
+/data/

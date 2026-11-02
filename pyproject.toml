@@ -1,7 +1,7 @@
 [project]
 name = "image-binary-clf"
 version = "0.1.0"
-description = "A AI learning project"
+description = "洛天依 vs 初音未来 图像二分类（PyTorch 学习项目）"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
