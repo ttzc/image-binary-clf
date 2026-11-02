@@ -12,6 +12,7 @@
 | `common.py` | 共用定义：`TinyCNN`、transforms、指标、训练/推理函数。**train 与 eval 必须共用**，否则模型结构和预处理会漂移 |
 | `train.py` | 训练：新开任务 / 续训 / 指定轮数 |
 | `eval.py` | 测试：best 模型在 test 集上的完整指标 |
+| `viz.py` | 可视化：训练曲线、混淆矩阵、错误样本网格、阈值扫描 |
 | `01_image_binary_clf_pipeline.ipynb` | 最初的学习过程（逐单元讲解版），脚本是从这里抽出来的 |
 
 ## 用法
@@ -31,6 +32,9 @@ uv run python eval.py
 
 # 换阈值 + 扫一遍最优阈值
 uv run python eval.py --threshold 0.6 --sweep
+
+# 出图：训练曲线 / 混淆矩阵 / 错误样本 / 阈值扫描
+uv run python viz.py --sweep
 ```
 
 `--epochs` 的语义：**本次要跑多少轮**。续训时表示「在已训练轮数之后再跑 N 轮」，
